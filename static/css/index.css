@@ -1,11 +1,3 @@
-@font-face {
-    font-family: 'Manrope';
-    src: url('../fonts/Manrope/Manrope-VariableFont_wght.ttf') format('truetype');
-    font-weight: 200 800;
-    font-style: normal;
-    font-display: swap;
-}
-
 :root {
     --primary-color: #00236f;
     --secondary-color: #006d37;
@@ -14,11 +6,9 @@
     --surface-container: #eaeef2;
     --text-on-surface: #171c1f;
     --text-variant: #444651;
-    --font-headline: 'Manrope', sans-serif;
 }
 
 body {
-    font-family: var(--font-body);
     color: var(--text-on-surface);
     background-color: var(--background-light);
     overflow-x: hidden;
@@ -32,7 +22,6 @@ h4,
 .navbar-brand,
 .nav-link,
 .btn-headline {
-    font-family: var(--font-headline);
     font-weight: 700;
 }
 
