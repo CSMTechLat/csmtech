@@ -1,18 +1,9 @@
 @font-face {
     font-family: 'Manrope';
-    /* Salimos de la carpeta css y entramos a fonts */
     src: url('../fonts/Manrope/Manrope-VariableFont_wght.ttf') format('truetype');
     font-weight: 200 800;
-    /* Soporta todos los grosores porque es Variable */
     font-style: normal;
-}
-
-/* (Si también descargaste la fuente Inter, la agregas así. Si no la tienes, ignora este bloque) */
-@font-face {
-    font-family: 'Inter';
-    src: url('../fonts/Inter/Inter-VariableFont_slnt,wght.ttf') format('truetype');
-    font-weight: 100 900;
-    font-style: normal;
+    font-display: swap;
 }
 
 :root {
@@ -24,7 +15,6 @@
     --text-on-surface: #171c1f;
     --text-variant: #444651;
     --font-headline: 'Manrope', sans-serif;
-    --font-body: 'Inter', sans-serif;
 }
 
 body {
@@ -46,7 +36,6 @@ h4,
     font-weight: 700;
 }
 
-/* Navigation */
 .navbar {
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
@@ -129,7 +118,6 @@ h4,
     inset: 0;
     z-index: 2;
     background: rgba(0, 22, 78, 0.5);
-    /* Azul oscuro al 50% de transparencia en toda la imagen */
 }
 
 .hero-content {
@@ -182,7 +170,6 @@ h4,
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
     animation: float 6s ease-in-out infinite;
     transition: transform 0.1s ease-out;
-    /* Para el efecto JS */
 }
 
 @keyframes float {
@@ -197,7 +184,6 @@ h4,
     }
 }
 
-/* Bento Grid Services */
 .services-section {
     padding: 100px 0;
 }
@@ -264,7 +250,6 @@ h4,
     color: var(--secondary-color);
 }
 
-/* Asymmetric Layout (Nosotros) */
 .nosotros-section {
     padding: 100px 0;
     background-color: #f0f4f8;
@@ -317,7 +302,6 @@ h4,
     font-size: 1.5rem;
 }
 
-/* Success Cases */
 .case-card {
     border-radius: 1rem;
     overflow: hidden;
@@ -365,7 +349,6 @@ h4,
     z-index: 2;
 }
 
-/* Modern Form */
 .contact-section {
     background: var(--primary-color);
     color: white;
@@ -405,7 +388,6 @@ label.form-label-small {
     font-weight: 700;
 }
 
-/* Footer */
 footer {
     background: #061121;
     padding: 4rem 0 2rem 0;
@@ -427,7 +409,6 @@ footer {
     color: var(--secondary-light);
 }
 
-/* Mobile Nav */
 .mobile-nav {
     display: none;
 }
@@ -468,25 +449,20 @@ footer {
 
     .navbar {
         display: none;
-        /* Hide top nav on mobile to use bottom bar perfectly */
     }
 
     body {
         padding-bottom: 70px;
-        /* Space for mobile nav */
     }
 }
 
-/* --- Nueva Sección de Contacto (Basada en la Imagen) --- */
 .contacto-banner {
     background-color: var(--primary-color);
-    /* Fondo azul oscuro general */
     padding: 80px 15px;
 }
 
 .contacto-card-wrapper {
     background-color: #0b2566;
-    /* Azul intermedio del contenedor */
     border-radius: 24px;
     padding: 4rem 2rem;
     max-width: 1100px;
@@ -513,10 +489,8 @@ footer {
     font-weight: 700;
 }
 
-/* Tarjetas individuales de contacto */
 .info-card {
     background-color: #1a3675;
-    /* Azul claro de las tarjetas */
     border-radius: 16px;
     padding: 2rem 1.5rem;
     display: flex;
@@ -539,7 +513,6 @@ footer {
 .info-card-icon {
     font-size: 2.5rem !important;
     color: #4ade80;
-    /* Verde brillante de los iconos */
     margin-bottom: 1.5rem;
 }
 
@@ -557,5 +530,4 @@ footer {
     font-weight: 600;
     color: white;
     word-break: break-word;
-    /* Evita que el correo se salga en móviles */
 }
